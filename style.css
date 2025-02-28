@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Music&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+* {
+    font-family: 'Poppins', serif;
+    word-spacing: 5px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    color: #fff;
+}
+
+#demo {
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#demo:hover {
+    background-color: #2F2727;
+    color: #fff;
+}
+
+.last {
+    font-size: 30px;
+}
+
+body {
+    /* fallback */
+    background-color: #1a82f7;
+    background-image: url(images/linear_bg_1.png);
+    background-repeat: repeat-y;
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(#2F2727));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(left, #2F2727, #1a82f7);
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(left, #2F2727, #1a82f7);
+    /* IE 10 */
+    background: -ms-linear-gradient(left, #2F2727, #1a82f7);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(left, #2F2727, #1a82f7);
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 100px;
+        padding-bottom: 30px;
+    }
+    #demo {
+        font-size: 20px;
+        padding: 15px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+        padding-bottom: 30px;
+        margin-top: 0%;
+    }
+    #demo {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
